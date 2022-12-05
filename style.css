@@ -1,0 +1,72 @@
+body {<!--from  w  w  w .  java  2 s .co m-->
+    text-align:center;
+    padding-top:31px;
+ }
+ body{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100vw;
+ height: 100vh;
+ background-color: black;
+ }
+ .diamond {
+    width: 500px;
+    height:500px;
+    position:relative;
+    margin-top:26px;
+    display:inline-block;
+ }
+ 
+ .diamond:before {
+    position:absolute;
+    display:block;
+    content:"";
+    width:500px;
+    height:500px;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    -webkit-transform:rotate(46deg);
+    -webkit-transition:border-color 0.4s;
+    -moz-transform:rotate(46deg);
+    -moz-transition:border-color 0.4s;
+    transform:rotate(46deg);
+    box-shadow:0px 0px 22px -3px Chartreuse;
+ }
+ 
+ .diamond-inner {
+    width:405px;
+    height:405px;
+    position:relative;
+    margin-top:126px;
+    display:inline-block;
+ }
+ 
+ .diamond-inner:before {
+    position:absolute;
+    display:block;
+    content:"";
+    width:405px;
+    height:405px;
+    left:0;
+    top:-86px;
+    right:0;
+    bottom:0;
+    border:2px solid yellow;
+    -webkit-transform:rotate(46deg);
+    -webkit-transition:border-color 0.4s;
+    -moz-transform:rotate(46deg);
+    -moz-transition:border-color 0.4s;
+    transform:rotate(46deg);
+ }
+ .diamond-inner{
+    color:red;
+    font-size: 50px;
+    display: flex;
+ align-items:center ;
+ justify-content: center;
+ width: 250px;
+ height: 100px;
+ }
